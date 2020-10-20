@@ -1,0 +1,31 @@
+Remove Element
+Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+Example 1:
+
+Given nums = [3,2,2,3], val = 3,
+
+Your function should return length = 2, with the first two elements of nums being 2.
+
+It doesn't matter what you leave beyond the returned length.
+Example 2:
+
+Given nums = [0,1,2,2,3,0,4,2], val = 2,
+
+Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
+
+Note that the order of those five elements can be arbitrary.
+
+It doesn't matter what values are set beyond the returned length.
+
+
+
+
+solution:  IDA
+
+http://pythontutor.com/visualize.html#code=%23Given%20an%20array%20nums%20and%20a%20value%20val,%20remove%20all%20instances%20of%20that%20value%20in-place%20and%20return%20the%20new%20length.%0A%23Do%20not%20allocate%20extra%20space%20for%20another%20array,%20you%20must%20do%20this%20by%20modifying%20the%20input%20array%20in-place%20with%20O%281%29%20extra%20memory.%0A%23The%20order%20of%20elements%20can%20be%20changed.%20It%20doesn't%20matter%20what%20you%20leave%20beyond%20the%20new%20length.%0A%0Adef%20inplace%28nums,val%29%3A%0A%20%20%20%20i%20%3D%200%0A%20%20%20%20while%20i%20%3C%3D%20len%28nums%29%20-%201%3A%0A%20%20%20%20%20%20%20%20if%20nums%5Bi%5D%20%3D%3D%20val%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20nums.remove%28nums%5Bi%5D%29%0A%20%20%20%20%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20i%2B%3D%201%0A%20%20%20%20return%20len%28nums%29%0Ainplace%28%5B3,2,2,3%5D,3%29%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20&cumulative=false&curInstr=19&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false
+
